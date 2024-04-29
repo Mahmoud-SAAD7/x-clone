@@ -39,7 +39,7 @@ if (process.env.NODE_ENV === "production") {
 	});
 }
 
-app.listen(3000, () => {
-  // console.log("Server is Running on port " + port);
+app.listen(port, () => {
+  console.log("Server is Running on port " + port);
   connectMongoDB();
 });
